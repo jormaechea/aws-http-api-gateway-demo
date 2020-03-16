@@ -1,0 +1,27 @@
+{
+  "name": "aws-http-api-gateway-demo",
+  "version": "1.0.0",
+  "description": "A demo of aws-http-api-gateway framework",
+  "main": "index.js",
+  "scripts": {
+    "get-many": "npx sls invoke local -f PetsGetManyApi -p events/get-many.json",
+    "get-one": "npx sls invoke local -f PetsGetOneApi -p events/get-one.json",
+    "create-one": "npx sls invoke local -f PetsCreateOneApi -p events/create-one.json",
+    "update-one": "npx sls invoke local -f PetsUpdateOneApi -p events/update-one.json"
+  },
+  "keywords": [
+    "aws-http-api-gateway",
+    "demo",
+    "aws-http-api-gateway-demo",
+    "aws-http-api-gateway demo"
+  ],
+  "author": "Joaquín Ormaechea (https://github.com/jormaechea)",
+  "license": "ISC",
+  "dependencies": {
+    "aws-http-api-gateway": "file:../aws-http-api-gateway",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "serverless": "^1.66.0"
+  }
+}
